@@ -1,0 +1,9 @@
+<?php
+session_start();
+if(empty($_SESSION['info']))
+{
+    header("location:adminProfile.php");
+}
+session_unset();
+header("location:authority_login.php");
+?>
